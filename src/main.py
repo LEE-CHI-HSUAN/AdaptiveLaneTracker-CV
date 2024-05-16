@@ -149,8 +149,8 @@ def estimate_frame_rate():
 
 
 if __name__ == "__main__":
-    # predict_video(auto_play=True)
-    CUL_predict_a_list()
+    predict_video(auto_play=True)
+    # CUL_predict_a_list()
 
 '''
 night, illumination: CULane/driver_193_90frame/driver_193_90frame/06042010_0511.MP4
