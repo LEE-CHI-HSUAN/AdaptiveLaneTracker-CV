@@ -11,9 +11,9 @@ def pltImage(img: np.ndarray, color: str = None) -> None:
     '''
     Show the image in Jupyter Notebook interface.
     '''
-    pic = img.copy() if len(img.shape) == 2 else cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    pic = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     plt.figure(figsize=(16,4))
-    plt.imshow(pic, cmap=color)
+    plt.imshow(pic)
 
 
 def line_to_points(slope: float, intercept: float, y_start: int, y_end: int, y_interval: int = 10, x_only = True):
